@@ -1,0 +1,22 @@
+[project]
+name = "k03-bazy-hurtownie-big-data"
+version = "0.0.0"
+description = "K03 Systemy baz danych, hurtownie danych i Big Data — materiały laboratoryjne i projektowe (Codespaces)."
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "duckdb==1.5.6",
+    "psycopg[binary]==3.3.6",
+    "pyarrow==25.0.1",
+    "pandas==3.0.6",
+    "matplotlib==3.11.2",
+]
+
+[dependency-groups]
+dev = ["ruff", "jupytext"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "NPY"]

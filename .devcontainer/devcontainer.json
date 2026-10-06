@@ -1,0 +1,26 @@
+{
+  "name": "K3 — bazy, hurtownie, Big Data",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "hostRequirements": { "cpus": 2, "memory": "8gb" },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y postgresql-client && pip install --user uv && uv sync",
+  "postStartCommand": "docker compose --profile pg up -d --wait",
+  "containerEnv": {
+    "PGHOST": "localhost", "PGPORT": "5432", "PGUSER": "postgres",
+    "PGPASSWORD": "k3", "PGDATABASE": "olist"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "mtxr.sqltools", "mtxr.sqltools-driver-pg"],
+      "settings": {
+        "sqltools.connections": [{
+          "name": "olist (PostgreSQL)", "driver": "PostgreSQL",
+          "server": "localhost", "port": 5432, "database": "olist",
+          "username": "postgres", "password": "k3"
+        }]
+      }
+    }
+  }
+}

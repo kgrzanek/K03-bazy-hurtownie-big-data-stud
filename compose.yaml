@@ -1,0 +1,18 @@
+# Serwery do laboratoriów. Każde laboratorium uruchamia tylko swoje (profile),
+# bo wszystkie naraz nie zmieszczą się w pamięci Codespace.
+services:
+  pg:
+    image: postgres:17
+    profiles: [pg]
+    environment:
+      POSTGRES_PASSWORD: k3
+      POSTGRES_DB: olist
+    ports: ["5432:5432"]
+    volumes: [pg-data:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 2s
+      retries: 30
+
+volumes:
+  pg-data:
