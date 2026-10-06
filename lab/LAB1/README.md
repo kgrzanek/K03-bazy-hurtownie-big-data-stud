@@ -10,12 +10,16 @@ zobaczycie, że prawdziwe dane łamią założenia, które wydają się oczywist
 
 ## 0. Start (10 min)
 
-1. Na stronie repozytorium: **Code → Codespaces → Create codespace on main**.
+1. **Wasze repozytorium** (raz na semestr): na stronie
+   `github.com/kgrzanek/K03-bazy-hurtownie-big-data-stud` — **Use this template →
+   Create a new repository**, właściciel: wasze konto, widoczność **Private**.
+   Szczegóły w głównym `README.md`.
+2. W **waszym** repozytorium: **Code → Codespaces → Create codespace on master**.
    Pierwsze uruchomienie trwa kilka minut (instalacja narzędzi, start
    PostgreSQL). Kolejne — kilkanaście sekund.
-2. W terminalu na dole okna: `psql`. Powinniście zobaczyć znak zachęty
+3. W terminalu na dole okna: `psql`. Powinniście zobaczyć znak zachęty
    `olist=#`. Połączenie jest skonfigurowane — hasło nie jest potrzebne.
-3. Sprawdźcie: `\conninfo` (z kim i gdzie jesteście połączeni) i `\q` (wyjście).
+4. Sprawdźcie: `\conninfo` (z kim i gdzie jesteście połączeni) i `\q` (wyjście).
 
 **Dwa sposoby pracy z plikiem `LAB1.sql`** — wybierzcie wygodniejszy:
 
@@ -92,9 +96,10 @@ dokończcie w domu, w tym samym Codespace.
 
 ## Przed wyjściem
 
-Nic nie musicie wyłączać — Codespace zatrzyma się sam po 30 minutach
-bezczynności, a baza z danymi zostanie na następne zajęcia. Jeśli zmienialiście
-pliki: `git add`, `git commit`, `git push`.
+Zapiszcie pracę w **waszym** repozytorium: `git add -A`,
+`git commit -m "LAB1"`, `git push`. Nic więcej nie trzeba wyłączać —
+Codespace zatrzyma się sam po 30 minutach bezczynności, a baza z danymi
+zostanie na następne zajęcia.
 
 ---
 
