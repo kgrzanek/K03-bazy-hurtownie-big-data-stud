@@ -26,8 +26,9 @@ zobaczycie, że prawdziwe dane łamią założenia, które wydają się oczywist
 - **psql:** `\i lab/LAB1/LAB1.sql` uruchamia cały plik; fragment — skopiujcie
   do psql;
 - **VS Code:** otwórzcie `LAB1.sql`, zaznaczcie fragment i **Ctrl+E Ctrl+E**
-  (rozszerzenie SQLTools, połączenie „olist (PostgreSQL)” — wybrać przy
-  pierwszym użyciu); wynik pojawia się w tabelce obok.
+  (albo prawy przycisk myszy → *Run Selected Query*; rozszerzenie SQLTools,
+  połączenie „olist (PostgreSQL)” — wybrać przy pierwszym użyciu); wynik
+  pojawia się w tabelce obok.
 
 Psql uruchamiajcie z **głównego katalogu** repozytorium — ścieżki do danych
 (`dane/olist/...`) są względne.
@@ -67,6 +68,11 @@ Sprawdźcie efekt: `\d orders`, `\d order_items`.
 Polecenie `\copy` z pliku. **Pytanie 1:** spróbujcie załadować pozycje
 **przed** zamówieniami. Co się dzieje i dlaczego? Ile wierszy trafiło do
 tabeli? Potem ładujcie we właściwej kolejności i sprawdźcie liczby wierszy.
+
+Gdy `\copy` przerwie się na błędzie, pod komunikatem `ERROR` pojawi się też
+`gzip -dc …: child process exited with exit code 141`. To skutek uboczny:
+psql przestał czytać, więc `gzip` dostał sygnał przerwanego potoku. **Liczy się
+błąd `ERROR` nad nim.**
 
 ## 4. Klucze w działaniu (10 min)
 
