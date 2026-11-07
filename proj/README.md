@@ -53,25 +53,42 @@ inne zdarzenie, np. dostawę, płatność albo recenzję, i inne pytania.
 - **Wszystko uruchamia się od zera jednym poleceniem**, opisanym w `projekt/README.md`.
   Etap, którego nie da się odtworzyć w czystym Codespace, nie działa.
 - Dane, z których korzystasz, leżą w repozytorium (`projekt/dane/`), spakowane
-  `gzip`. GitHub odrzuca pliki większe niż 100 MB — przy większych danych wybierz
-  podzbiór i opisz, jak powstał.
+  `gzip`, **razem do 10 MB** — tak, żeby całość zmieściła się w archiwum
+  końcowym wysyłanym pocztą (niżej). Przy większych danych wybierz podzbiór i opisz,
+  jak powstał, albo dołącz skrypt, który pobiera dane z podanego źródła.
 
 ## Oddanie etapu
 
-1. Zatwierdź i wypchnij pracę (`git add -A`, `git commit`, `git push`).
-2. Oznacz oddawaną wersję etykietą etapu: `git tag e1 && git push --tags`.
-   Poprawioną wersję oznaczasz `e1-v2`, `e1-v3`.
-3. Raz na semestr: w swoim repozytorium **Settings → Collaborators → Add people**
-   dodaj prowadzącego, **`kgrzanek`**, żeby mógł czytać prywatne repozytorium.
-4. W swoim repozytorium otwórz zgłoszenie (**Issues → New issue**) o tytule
-   „E1 do oceny” i wspomnij w nim prowadzącego (`@kgrzanek`). Ocena i uwagi
-   pojawią się w tym zgłoszeniu.
+Każdy etap **pokazujesz prowadzącemu** w formie, która jest dla Ciebie wygodna:
+na zajęciach, na konsultacjach albo w spotkaniu w Teams z udostępnionym ekranem.
+Pokazujesz działający wynik — uruchomienie od zera i liczby z dokumentacji — oraz
+odpowiadasz na pytania o decyzje. Prowadzący mówi, czy etap jest **przyjęty**,
+i co poprawić. Wszystko zapisuj w swoim repozytorium (`git add -A`, `git commit`,
+`git push`).
+
+## Oddanie całości — archiwum na koniec semestru
+
+Na koniec semestru wysyłasz **całość projektu jako jedno archiwum** pocztą na adres
+**kgrzanek@san.edu.pl**:
+
+- archiwum `.zip` o nazwie `K03-Nazwisko-Imie.zip`, w temacie wiadomości
+  „K03 projekt — Nazwisko Imię”;
+- w środku cały katalog `projekt/`: dokumentacja, SQL, programy w Pythonie, dane
+  albo skrypt, który je pobiera — wszystko, czego potrzeba, żeby uruchomić projekt
+  od zera poleceniem z `projekt/README.md`;
+- rozmiar **do 15 MB**: typowe skrzynki pocztowe przyjmują wiadomości do 20–25 MB,
+  a załącznik po zakodowaniu rośnie o około jedną trzecią.
+
+W Codespace archiwum z zatwierdzonej wersji tworzy polecenie
+`git archive --format=zip -o K03-Nazwisko-Imie.zip HEAD projekt`; plik pobierasz
+z panelu plików (prawy przycisk myszy → *Download*).
 
 **Terminy.** Ostateczny termin dla wszystkich etapów to koniec semestru. Zalecany:
 każdy etap przed zajęciami, po których zaczyna się następny (tabela wyżej).
-Kolejność jest obowiązkowa: następny etap oddajesz dopiero po **przyjęciu**
-poprzedniego, bo każdy etap korzysta z poprzedniego. Oddanie wszystkiego
-w ostatnim tygodniu oznacza kolejkę do oceny i brak czasu na poprawki.
+Kolejność jest obowiązkowa: następny etap pokazujesz dopiero po **przyjęciu**
+poprzedniego, bo każdy etap korzysta z poprzedniego. Pokazywanie wszystkiego
+w ostatnim tygodniu oznacza kolejkę i brak czasu na poprawki. Archiwum końcowe
+wysyłasz po przyjęciu E4.
 
 ## Ocena
 
@@ -93,7 +110,7 @@ i **dobrym**. Co oznaczają w danym etapie, mówi jego opis.
 | 4,5 | jak 3,0 i co najmniej 12 z 16 kryteriów na poziomie dobrym |
 | 5,0 | jak 4,5 i **rozszerzenie**: przetwarzanie danych projektu w Sparku albo jako strumień zdarzeń (wykład S7) |
 
-**Obrona** (zajęcia projektowe): pokazujesz działający system od zera, odpowiadasz
+**Obrona** (zajęcia projektowe albo spotkanie w Teams): pokazujesz działający system od zera, odpowiadasz
 na pytania o każdy jego fragment i o decyzje z dokumentacji. Fragmentu, którego
 nie potrafisz wyjaśnić, nie traktuje się jako Twojej pracy. Zasady korzystania
 z modeli językowych prowadzący poda osobno.

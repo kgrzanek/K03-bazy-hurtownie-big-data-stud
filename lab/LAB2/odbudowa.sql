@@ -1,5 +1,5 @@
 -- Odbudowa bazy z LAB1: pięć tabel Olist (customers, sellers, products, orders,
--- Wersja: 513d3b3 z 2026-11-07
+-- Wersja: 79752ab z 2026-11-07
 -- order_items) i order_reviews. Uruchamiacie TYLKO wtedy, gdy po LAB1 w bazie
 -- brakuje tabel albo wierszy (sprawdzenie: punkt 0 w LAB2.sql). Kasuje i ładuje od nowa.
 -- Z głównego katalogu repozytorium:  psql -f lab/LAB2/odbudowa.sql
