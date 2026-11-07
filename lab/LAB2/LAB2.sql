@@ -1,5 +1,5 @@
 -- LAB2 — zapytania na bazie sklepu: złączenia, agregacje, podzapytania, funkcje okna, indeks i plan
--- Wersja: 5a19d83 z 2026-11-07
+-- Wersja: 513d3b3 z 2026-11-07
 -- K3 Systemy baz danych, hurtownie danych i Big Data · laboratorium 2 (temat L2)
 --
 -- Jak pracować: instrukcja w README.md obok. Fragmenty tego pliku uruchamiacie

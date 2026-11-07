@@ -51,5 +51,9 @@ repozytorium ma osobną historię i git odmówi połączenia.
 - [`lab/LAB1`](lab/LAB1/README.md)
 - [`lab/LAB2`](lab/LAB2/README.md)
 
+## Projekt
+
+Twój indywidualny projekt semestralny — wymagania i ocena: [`proj/README.md`](proj/README.md); opisy etapów: [`E1`](proj/E1.md).
+
 Dane: Olist, *Brazilian E-Commerce Public Dataset*, CC BY-NC-SA 4.0 —
 `dane/olist/ZRODLO.md`.
