@@ -49,6 +49,7 @@ repozytorium ma osobną historię i git odmówi połączenia.
 ## Laboratoria
 
 - [`lab/LAB1`](lab/LAB1/README.md)
+- [`lab/LAB2`](lab/LAB2/README.md)
 
 Dane: Olist, *Brazilian E-Commerce Public Dataset*, CC BY-NC-SA 4.0 —
 `dane/olist/ZRODLO.md`.
