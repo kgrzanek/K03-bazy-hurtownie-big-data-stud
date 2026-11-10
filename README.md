@@ -53,7 +53,7 @@ repozytorium ma osobną historię i git odmówi połączenia.
 
 ## Projekt
 
-Twój indywidualny projekt semestralny — wymagania i ocena: [`proj/README.md`](proj/README.md); opisy etapów: [`E1`](proj/E1.md).
+Twój indywidualny projekt semestralny — wymagania i ocena: [`proj/README.md`](proj/README.md); opisy etapów: [`E1`](proj/E1.md), [`E2`](proj/E2.md), [`E3`](proj/E3.md), [`E4`](proj/E4.md).
 
 Dane: Olist, *Brazilian E-Commerce Public Dataset*, CC BY-NC-SA 4.0 —
 `dane/olist/ZRODLO.md`.

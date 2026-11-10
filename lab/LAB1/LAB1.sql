@@ -1,5 +1,5 @@
 -- LAB1 — baza transakcyjna sklepu: tabele, klucze, ładowanie, pierwsze zapytania
--- Wersja: 79752ab z 2026-11-07
+-- Wersja: b0ac06a z 2026-11-10
 -- K3 Systemy baz danych, hurtownie danych i Big Data · laboratorium 1 (temat L1)
 --
 -- Jak pracować: instrukcja w README.md obok. Fragmenty tego pliku uruchamiacie

@@ -18,14 +18,15 @@ buduje na poprzednim.
 | etap | co powstaje | opis | po zajęciach |
 |---|---|---|---|
 | **E1** | dziedzina, schemat transakcyjny w PostgreSQL, dane załadowane | [`E1.md`](E1.md) | LAB4 (model encja–związek, normalizacja) |
-| **E2** | model wymiarowy hurtowni w DuckDB z uzasadnieniem ziarna | `E2.md` (później) | LAB6 (model wymiarowy) |
-| **E3** | potok ETL z PostgreSQL do DuckDB, z regułami jakości, idempotentny | `E3.md` (później) | LAB7 (potok ETL) |
-| **E4** | analizy, dokumentacja, prezentacja i obrona | `E4.md` (później) | ostatnie zajęcia projektowe |
+| **E2** | model wymiarowy hurtowni w DuckDB z uzasadnieniem ziarna | [`E2.md`](E2.md) | LAB6 (model wymiarowy) |
+| **E3** | potok ETL z PostgreSQL do DuckDB, z regułami jakości, idempotentny | [`E3.md`](E3.md) | LAB7 (potok ETL) |
+| **E4** | analizy, dokumentacja, prezentacja i obrona | [`E4.md`](E4.md) | ostatnie zajęcia projektowe |
 
 Pojęcia z tabeli — model wymiarowy (ang. *dimensional model*), ziarno (ang. *grain*),
 ETL (ang. *extract, transform, load* — pobranie, przekształcenie, załadowanie),
-idempotencja — wyjaśniamy na wykładach S3, S5 i S6. Opis każdego etapu ukazuje się
-tutaj przed zajęciami, na których zaczyna się jego materiał.
+idempotencja — wyjaśniamy na wykładach S3, S5 i S6. Opisy wszystkich etapów są już
+tutaj, ale każdy etap wymaga wykładu i laboratorium z ostatniej kolumny tabeli — zaczynaj
+go po tych zajęciach.
 
 ## Dziedzina i dane
 
